@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import api from '../../services/api'
 
 import logo from '../../assets/logo.svg';
-import "./styles.css";
+import './styles.css';
 
 
 export default class Main extends Component {
@@ -27,7 +27,7 @@ export default class Main extends Component {
 
   render() {
         return (
-            <div id="box-container">
+            <div id="main-container">
                 <form onSubmit={this.handleSubmit}>
                     <img src={logo} alt=""/>
                     <input placeholder="Criar um box" value={this.state.newBox} onChange={this.handleInputChange}/>
